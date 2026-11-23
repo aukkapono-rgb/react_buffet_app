@@ -1,6 +1,7 @@
 import { useState } from "react";
 import buffetImg from "../assets/buffet.png";
 import Swal from "sweetalert2";
+import Footer from "../components/Footer";
 
 export default function Buffet() {
   const [adults, setAdults] = useState("");
@@ -239,6 +240,8 @@ export default function Buffet() {
         <span className="font-bold text-indigo-600 text-base">{totalPay}</span>
         <span className="font-bold text-gray-700 text-sm">บาท</span>
       </div>
+        {/* แสดงส่วน Footer */}
+      <Footer />
     </div>
   );
 }
